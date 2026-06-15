@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edge-case-enum"
+version = "0.1.0"
+description = "Enumerate potential edge cases in Python source files via AST analysis"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+edge-case-enum = "edge_case_enum.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
